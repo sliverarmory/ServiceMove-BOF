@@ -4,7 +4,7 @@
     "command_name": "bof-servicemove",
     "extension_author": "c2biz",
     "original_author": "netero1010",
-    "repo_url": "https://github.com/IcebreakerSecurity/ServiceMove-BOF",
+    "repo_url": "https://github.com/netero1010/ServiceMove-BOF",
     "help": "Lateral movement technique by abusing Windows Perception Simulation Service to achieve DLL hijacking",
     "depends_on": "coff-loader",
     "entrypoint": "go",

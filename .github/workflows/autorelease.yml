@@ -34,7 +34,7 @@ jobs:
 
       - name: Build artifacts
         run: |
-          make clean
+          rm *.o
           make
           mkdir artifacts
           VERSION=$(git describe --tags --abbrev=0)
