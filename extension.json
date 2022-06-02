@@ -1,0 +1,32 @@
+{
+    "name": "ServiceMove-BOF",
+    "version": "0.0.0",
+    "command_name": "bof-servicemove",
+    "extension_author": "c2biz",
+    "original_author": "netero1010",
+    "repo_url": "https://github.com/IcebreakerSecurity/ServiceMove-BOF",
+    "help": "Lateral movement technique by abusing Windows Perception Simulation Service to achieve DLL hijacking",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "servicemove.x64.o"
+      }
+    ],
+    "arguments": [
+      {
+        "name": "targetHost",
+        "desc": "Target Host",
+        "type": "string",
+        "optional": false
+      },
+      {
+        "name": "maliciousDLL",
+        "desc": "/path/to/local/PROXIED.dll",
+        "type": "file",
+        "optional": false
+      }
+    ]
+  }
